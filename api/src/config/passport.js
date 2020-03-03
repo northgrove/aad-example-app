@@ -12,7 +12,9 @@ const {
   loggingLevel,
   cookieEncryptionKeys,
   useCookieInsteadOfSession,
-  nonceLifetime
+  nonceLifetime,
+  isB2C,
+  tenantIdOrName
 } = require('./passportConfig')
 const finduser = require('./findUser')
 const OIDCStrategy = require('passport-azure-ad').OIDCStrategy

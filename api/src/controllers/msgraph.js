@@ -7,7 +7,7 @@ exports.getUserPhoto = async ({ userId, refreshToken, userUpn }) => {
   console.log("\x1b[33m%s\x1b[0m" ,' - requesting userphoto from graph.microsoft.com')
   let userPhoto = ''
   const resource = 'https://graph.microsoft.com'
-  const accessToken = await token.validateRefreshAndGetToken(userId, refreshToken, resource)
+  const accessToken = "jaujau" //await token.validateRefreshAndGetToken(userId, refreshToken, resource)
   return request
     .get({
       headers: { 'content-type': 'image/jpg' },

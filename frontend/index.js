@@ -3,16 +3,18 @@ const msgraph = require('../api/src/controllers/msgraph')
 
 exports.showFrontPage = () => {
     return async (req, res) => {
+     
       const userPhoto = await msgraph.getUserPhoto({
         userId: req.session.userid,
         refreshToken: req.session.refreshToken,
         userUpn: req.session.upn
       })
+      
       console.log("\x1b[33m%s\x1b[0m" ,' - showing frontpage')
       res.send(`
         <html>
         <center>
-          <h1>NAVs Azure AD Autorization Flow Example APP</h1>
+          <h1>Azure AD Autorization Flow Example APP</h1>
           <a>You are now logged in</a>
           <br></br>
           <p><img src=${userPhoto} width="96" height="96" border="1"/></p>

@@ -1,5 +1,5 @@
 {
-  "name": "NAVs-AAD-Example-APP",
+  "name": "AAD-Example-APP",
   "jest": {
     "moduleNameMapper": {
       "\\.(css|jpg|png)$": "<rootDir>/empty-module.js"
@@ -16,7 +16,7 @@
     ]
   },
   "version": "1.0.0",
-  "description": "Example APP for NAVs Azure AD authorization flow",
+  "description": "Example APP for Azure AD authorization flow",
   "main": "api/src/startApp.js",
   "dependencies": {
     "azure-jwt-verify": "^1.0.0",
@@ -96,6 +96,6 @@
     "AAD",
     "AzureAD"
   ],
-  "author": "@navikt/aura",
+  "author": "northgrove",
   "license": "MIT"
 }
