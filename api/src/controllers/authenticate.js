@@ -22,7 +22,7 @@ exports.authenticateAzure = () => {
         // resourceURL: 'b36e92f3-d48b-473d-8f69-e7887457bd3f', // ## Use if need accesstoken during login
         successRedirect: '/',
         failureRedirect: '/error',
-        tenantIdOrName: 'ngroveb2c.onmicrosoft.com'
+        tenantIdOrName: 'msgroveb2c.onmicrosoft.com'
       })(req, res, next)
     } catch (err) {
       throw `ERROR during authentication: ${err}`
