@@ -31,7 +31,7 @@
     "helmet": "^3.14.0",
     "https-proxy-agent": "^2.2.1",
     "morgan": "^1.9.0",
-    "nock": "^10.0.1",
+    "nock": "^11.0.0",
     "oauth": "^0.9.15",
     "passport": "^0.4.0",
     "passport-azure-ad": "^4.0.0",
